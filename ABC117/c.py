@@ -1,0 +1,5 @@
+N, M = map(int, input().split())
+a = sorted(map(int, input().split()))
+print(zip(a, a[1:]))
+a2 = sorted(m-n for n, m in zip(a, a[1:]))
+print(sum(a2[:max(M-N, 0)]))
